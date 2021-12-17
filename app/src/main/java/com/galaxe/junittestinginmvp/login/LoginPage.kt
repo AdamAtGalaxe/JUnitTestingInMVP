@@ -26,11 +26,11 @@ class LoginPage : AppCompatActivity(), ContractInterface.View {
         initView()
 
     }
+    //Why is everyone doing it this way? shouldn't I create the listener in onCreate?
     override fun initView() {
-        //counterTextView.text = presenter?.getCounter()
         loginButton.setOnClickListener { presenter?.login() }
     }
-
+    //Is this a remnant of an old method or am I doing this wrong? Everything is updating on its own
     override fun updateViewData() {
         TODO("Not yet implemented")
     }

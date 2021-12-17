@@ -36,6 +36,8 @@ class LoginModelTest{
         val expected = false
         val username = " "
         val password = " "
+
+        //Why are all the tutorials NOT having to do this step?
         val test = LoginModel()
 
 
